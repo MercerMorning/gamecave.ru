@@ -26,12 +26,6 @@ class GameController extends Controller
 
     function add(GameRequest $request)
     {
-//        $status = Parsing::getStatus('gabestore', getUrlName($request->name),
-//            ['last_domen' => '.ru', 'path' => '/game/', 'price_block' => 'b-card__price-currentprice']
-//        );
-//        echo $gameName = Parsing::rename($status, $request->name)
-
-        $m = getFullAddress('dfdf', 'witcher 3');
         $usersEmail = User::all();
         $sites = new SiteController();
         $hasCategory = Category::query()

@@ -54,7 +54,7 @@ class Parsing extends Model
     }
 
 
-    public static function getStatus($siteName, $game, $siteAttributes) {
+    public static function getStatus($siteName, $game, $siteAttributes) { /** @var Получение урл $gameName */
         $gameName = $game;
         $figures = config('figures.figures');
         $letters = config('figures.letters');

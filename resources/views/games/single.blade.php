@@ -5,11 +5,11 @@
     <div class="container">
         <div class="page-path">
             <ul class="path-list">
-                <li><a href="{{ route('home')}}">Home</a></li>&nbsp;&nbsp;/&nbsp;&nbsp;
+                <li><a href="{{ route('main')}}">Home</a></li>&nbsp;&nbsp;/&nbsp;&nbsp;
                 <li><a href="#>Blog</a></li>&nbsp;&nbsp;/&nbsp;&nbsp;
                 <li class="act">Details</li>
             </ul>
-            <p><a href="index.html">Back to Home</a></p>
+            <p><a href="index.html">Back to main</a></p>
             <div class="clearfix"></div>
         </div>
         <h3 class="page-header">
