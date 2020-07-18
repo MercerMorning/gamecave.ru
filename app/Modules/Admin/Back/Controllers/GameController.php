@@ -48,9 +48,9 @@ class GameController extends Controller
             ->orderByDesc('created_at')
             ->limit(count(config('site.sites')))
             ->get();
-        foreach ($usersEmail as $userEmail) {
-            \Mail::to($userEmail->email)->send(new FreshPrice(['game'=>$request->name, 'sites'=>$prices]));
-        }
+//        foreach ($usersEmail as $userEmail) {
+//            \Mail::to($userEmail->email)->send(new FreshPrice(['game'=>$request->name, 'sites'=>$prices]));
+//        }
         return redirect()->route('admin.index');
     }
 
