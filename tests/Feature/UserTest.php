@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Modules\Pub\Front\Controllers\Auth\RegisterController;
+use App\Modules\Pub\Front\Controllers\Auth_old\RegisterController;
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;

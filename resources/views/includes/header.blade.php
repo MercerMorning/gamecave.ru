@@ -82,7 +82,7 @@ Author URL: http://w3layouts.com
                     @if (Route::has('login'))
                         <div class="authorization-block">
                             @auth
-                                <a href="{{ url('/home') }}" class="authorization-block__link">Личный кабинет</a>
+{{--                                <a href="{{ url('/home') }}" class="authorization-block__link">Личный кабинет</a>--}}
                                 <a href="{{ route('exit') }}" class="authorization-block__link">Выйти</a>
                             @else
                                 <a href="{{ route('login') }}" class="authorization-block__link">Вход</a>

@@ -1,7 +1,6 @@
 <?php
 
-//namespace App\Http\Controllers\Auth;
-namespace  App\Modules\Pub\Front\Controllers\Auth;
+namespace App\Modules\Pub\Front\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -22,6 +21,8 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
+
+    use RegistersUsers;
 
     /**
      * Where to redirect users after registration.
@@ -61,16 +62,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-//    protected function create(array $data)
-//    {
-//        return User::create([
-//            'name' => $data['name'],
-//            'email' => $data['email'],
-//            'password' => Hash::make($data['password']),
-//        ]);
-//    }
-
-    public function create(array $data)
+    protected function create(array $data)
     {
         return User::create([
             'name' => $data['name'],
@@ -78,11 +70,4 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
-
-    public function showRegistrationForm()
-    {
-        return view('auth.register');
-    }
-
-
 }

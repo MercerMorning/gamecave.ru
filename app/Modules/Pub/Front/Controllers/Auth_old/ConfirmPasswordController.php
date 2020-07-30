@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace  App\Modules\Pub\Front\Controllers\Auth_old;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;

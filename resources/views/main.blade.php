@@ -74,10 +74,9 @@
         </div>
         <div class="col-md-6 vid-coll">
 {{--            <img src="{{ URL::asset('images/vid-img.jpg') }}" alt="">--}}
-            <video width="320" height="240" controls>
-                <source src="{{ $video }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+{{--            <iframe width = "560" height = "150" src = "{{ $video }}" frameborder = "0" allowfullscreen></iframe>--}}
+            <iframe width = "560" height = "150" src = "https://www.youtube.com/watch?v=o6L5ZBVvfIw" frameborder = "0" allowfullscreen></iframe>
+
             <div class="play-but">
                 <a href="#small-dialog5" class="thickbox play-icon popup-with-zoom-anim">
                     <img src="{{ URL::asset('images/vid-play.png') }}" alt="" />

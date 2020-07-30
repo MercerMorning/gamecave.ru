@@ -1,6 +1,6 @@
 <?php
 
-namespace  App\Modules\Pub\Front\Controllers\Auth;
+namespace App\Modules\Pub\Front\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -35,6 +35,6 @@ class ConfirmPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth_del');
     }
 }
